@@ -1,0 +1,37 @@
+<!--<form>-->
+<!--    <div>-->
+<!--        <input class="" id="uploadCsv" type="file">-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--        <input type="text" name="image" placeholder="Название документа">-->
+<!--        <input type="hidden" name="tablename" value="">-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <label for="uploadCsv" class="button">Кнопка загрузки</label>-->
+<!--    </div>-->
+<!--</form>-->
+
+<!--<input type="file" id="file">-->
+<!--<button>Чтение файла</button>-->
+
+
+<!--<form action="/add" method="POST" enctype="multipart/form-data">-->
+<!--    <input type="file" name="csv">-->
+<!--    <button type="submit">Подтвердить</button>-->
+<!--</form>-->
+
+
+<form action="/add" method="post" enctype="multipart/form-data">
+<!--    <h3>Загрузка файла</h3>-->
+
+    <div class="form-group">
+<!--        <label for="textMessageTo">Текст:</label>-->
+<!--        <textarea class="form-control" id="textMessageTo"  name="text"></textarea>-->
+    </div>
+    <div class="inline-block" >
+        <input class="form-control" type="file" id="formFile" name="csvfile" accept=".csv, .json, application/json">
+    </div>
+
+    <button type="submit" class="btn btn-primary inline-block ">Отправить</button>
+</form>

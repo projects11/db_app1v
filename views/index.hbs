@@ -1,0 +1,31 @@
+
+<!--<h2>Внутренняя БД v1.0</h2>-->
+
+{{#if alldata.length}}
+<table class="striped responsive-table" >
+    <tr>
+        <th>email</th>
+        <th>Фио</th>
+        <th>Город</th>
+        <th>Пол</th>
+        <th>Дата рождения</th>
+        <th>Телефон</th>
+    </tr>
+
+
+{{#each alldata}}
+    <tr>
+        <td>{{emails}}</td>
+        <td>{{fio}}</td>
+        <td>{{city}}</td>
+        <td>{{sex}}</td>
+        <td>{{birth}}</td>
+        <td>{{phone}}</td>
+    </tr>
+
+{{/each}}
+</table>
+    {{else}}
+    <p>efwe</p>
+{{/if}}
+
